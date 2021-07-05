@@ -29,7 +29,7 @@ const Marked = () => {
                 <div
                     className="input-region markdownStyle"
                     contentEditable="plaintext-only"
-                    suppressContentEditableWarning
+                    // suppressContentEditableWarning
                     onInput={e => {
                         setText(e.target.innerText);
                     }}
