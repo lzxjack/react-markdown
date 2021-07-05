@@ -1,0 +1,61 @@
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(56, 240, 215);
+    font-size: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marked {
+    min-height: calc(100vh - 60px);
+    display: flex;
+}
+
+.input-region {
+    background-color: rgb(233, 233, 233);
+    outline: none;
+}
+
+.input-region,
+.show-region {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* ——————————————————————————————显示区markdown样式—————————————————————————————— */
+/* 表格 */
+.markdownStyle table {
+    border: 1px solid #000;
+    border-spacing: 0; /*去掉单元格间隙*/
+}
+.markdownStyle table th,
+.markdownStyle table td {
+    padding: 6px 14px;
+    border: 1px solid #000;
+}
+
+/* 行内代码 */
+.markdownStyle code {
+    color: red;
+    background-color: #f9f2f4;
+    padding: 0 4px;
+}
+
+/* 图片 */
+.markdownStyle p img {
+    display: block;
+    max-width: 100%;
+    margin: 14px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+/* ———————————————————————————————————————————————————————————— */
